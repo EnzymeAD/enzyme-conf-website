@@ -1,12 +1,32 @@
 ---
 ---
 
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+  <link rel=icon href="{{ site.baseurl }}/favicon.png" />
+  {% if layout.map %}
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+  {% endif %}
+</head>
+
 {% include header.html %}
 
-<main
-  class="bg-indigo-500 flex h-screen items-center justify-center w-full"
->
+<body>
+
+<main>
   {{ content }}
 </main>
 
+</body>
+
 {% include footer.html %}
+
+</html>

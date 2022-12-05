@@ -1,5 +1,4 @@
-title: Tailwind Jekyll Starter Kit
-description: A starter kit for using Tailwind with Jekyll
+title: Enzyme Conference
 
 exclude:
   - Gemfile
@@ -12,4 +11,3 @@ exclude:
   - README.md
   - src
   - tailwind.config.js
-  - netlify.toml

@@ -1,22 +1,22 @@
 {
-  "name": "jekyll-starter-tailwind",
-  "version": "6.0.0",
-  "description": "A starter kit for using Tailwind with Jekyll",
+  "name": "enzyme-conf-website",
+  "version": "1.0.0",
+  "description": "Jekyll page for Enzyme Conf 2023",
   "main": "gulpfile.babel.js",
   "devDependencies": {
-    "autoprefixer": "10.3.4",
-    "babel-preset-env": "1.7.0",
-    "babel-register": "6.26.0",
-    "browser-sync": "2.27.4",
+    "autoprefixer": "^10.4.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.27.4",
     "browsersync": "0.0.1-security",
-    "cross-env": "7.0.3",
-    "cross-spawn": "7.0.3",
-    "cssnano": "5.0.8",
-    "gulp": "4.0.2",
-    "gulp-postcss": "9.0.1",
-    "postcss": "8.3.6",
-    "postcss-import": "14.0.2",
-    "tailwindcss": "2.2.15"
+    "cross-env": "^7.0.3",
+    "cross-spawn": "^7.0.3",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.4",
+    "postcss-import": "^15.0.1",
+    "tailwindcss": "^3.2.4"
   },
   "scripts": {
     "build:production": "cross-env NODE_ENV=production gulp",
@@ -29,10 +29,10 @@
     "type": "git",
     "url": "https://github.com/taylorbryant/jekyll-starter-tailwind.git"
   },
-  "author": "Taylor Bryant",
+  "author": "Tim Gymnich",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind/issues"
+    "url": "https://github.com/tgymnich/enzyme-conf-website/issues"
   },
   "publishConfig": {
     "access": "public"
