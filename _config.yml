@@ -2,6 +2,7 @@ title: Enzyme Conference
 locale: en_US
 lang: en
 url: https://enzyme.mit.edu/conference
+baseurl: /conference
 
 exclude:
   - Gemfile
