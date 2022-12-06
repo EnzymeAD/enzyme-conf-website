@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        enzymeblue: '#28bcff'
+        enzymeblue: '#0094E8'
       }
     }
   },
