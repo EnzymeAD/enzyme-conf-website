@@ -1,4 +1,7 @@
 title: Enzyme Conference
+locale: en_US
+lang: en
+url: https://enzyme.mit.edu/conference
 
 exclude:
   - Gemfile
@@ -11,3 +14,7 @@ exclude:
   - README.md
   - src
   - tailwind.config.js
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
