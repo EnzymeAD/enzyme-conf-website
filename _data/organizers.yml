@@ -16,11 +16,11 @@
 
 - name: "Leila Ghaffari (local)"
   affiliation: "University of Colorado Boulder"
-  image: "img/leila.jpg"
+  image: "img/lghaffari.webp"
 
 - name: "Tim Gymnich (web)"
   affiliation: "TU Munich"
-  image: "img/tim.jpg"
+  image: "img/tgymnich.jpg"
 
 - name: "Valentin Churavy (everything else)"
   affiliation: "MIT CSAIL"
