@@ -1,0 +1,15 @@
+- name: "William S. Moses (general)"
+  affiliation: "MIT CSAIL"
+  image: "/img/wmoses.jpg"
+
+- name: "Oleksandr Zinenko (program)"
+  affiliation: "Google Research"
+  image: "/img/ozinenko.jpg"
+
+- name: "Jed Brown (local)"
+  affiliation: "University of Colorado Boulder"
+  image: "/img/jbrown.jpg"
+
+- name: "Valentin Churavy (everything else)"
+  affiliation: "MIT CSAIL"
+  image: "/img/vchuravy.jpg"

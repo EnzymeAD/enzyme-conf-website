@@ -8,7 +8,7 @@ map: true
             <div class="relative inline-flex items-center mx-auto align-middle">
                 <div class="text-center">
                     <h1
-                        class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-enzymeblue md:text-5xl lg:text-6xl lg:max-w-7xl">
+                        class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-enzymeblue md:text-5xl lg:text-6xl lg:max-w-7xl transform hover:animate-pulse duration-300">
                         Enzyme Conference 2023
                     </h1>
                     <p class="max-w-xl mx-auto mt-8 text-base leading-relaxed text-gray-500">
@@ -48,17 +48,22 @@ map: true
     <div class="flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-col w-full max-w-3xl mx-auto text-left">
             <div class="w-full mx-auto">
-                <h2
-                    class="max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
-                    Timeline</h2>                    
+                <div class="flex flex-row items-center">
+                    <h2
+                        class="mr-4 max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
+                        Timeline</h2>
+                        <button class="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-enzymeblue transform hover:scale-101 duration-300 hover:shadow">
+                            Add to Calendar
+                        </button>
+                </div>
                 <ol class="border-l border-gray-300 mt-8">
                     {% for item in site.data.dates %}
                     <li>
                         <div class="flex flex-start items-center pt-3">
                             {% if item.mark %}
-                            <div class="bg-enzymeblue w-2 h-2 rounded-full animate-pulse -ml-1 mr-3"></div>
+                            <div class="bg-enzymeblue w-2 h-2 rounded-full animate-pulse -ml-1 mr-3 transform hover:scale-125 duration-300 hover:shadow"></div>
                             {% else %}
-                            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
+                            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3 transform hover:scale-125 duration-300 hover:shadow"></div>
                             {% endif %}
                             <p class="text-gray-500 text-sm">{{ item.date }}</p>
                         </div>
@@ -83,50 +88,20 @@ map: true
                     class="max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
                     Organizers</h2>
                 <div class="mt-8 flex flex-wrap -m-2">
+                    {% for organizer in site.data.organizers %}
                     <div class="p-2 lg:w-1/2 md:w-1/2 w-full">
-                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <div
+                            class="h-full flex items-center border-gray-200 border p-4 rounded-lg transform hover:-translate-y-1 duration-300 hover:shadow-md">
                             <img alt="team"
                                 class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                src="/img/wmoses.jpg">
+                                src="{{ organizer.image }}">
                             <div class="flex-grow">
-                                <h2 class="text-gray-900 title-font font-medium">William S. Moses (general)</h2>
-                                <p class="text-gray-500">MIT CSAIL</p>
+                                <h2 class="text-gray-900 title-font font-medium">{{ organizer.name }}</h2>
+                                <p class="text-gray-500">{{ organizer.affiliation }}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="p-2 lg:w-1/2 md:w-1/2 w-full">
-                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                            <img alt="team"
-                                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                src="/img/ozinenko.jpg">
-                            <div class="flex-grow">
-                                <h2 class="text-gray-900 title-font font-medium">Oleksandr Zinenko (program)</h2>
-                                <p class="text-gray-500">Google Research</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 lg:w-1/2 md:w-1/2 w-full">
-                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                            <img alt="team"
-                                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                src="/img/jbrown.jpg">
-                            <div class="flex-grow">
-                                <h2 class="text-gray-900 title-font font-medium">Jed Brown (local)</h2>
-                                <p class="text-gray-500">University of Colorado Boulder</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2 lg:w-1/2 md:w-1/2 w-full">
-                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                            <img alt="team"
-                                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                src="/img/vchuravy.jpg">
-                            <div class="flex-grow">
-                                <h2 class="text-gray-900 title-font font-medium">Valentin Churavy (everything else)</h2>
-                                <p class="text-gray-500">MIT CSAIL</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -145,8 +120,7 @@ map: true
                 </p>
                 <div class="mt-8 grid grid-cols-2 gap-16 text-center lg:grid-cols-3">
                     <div class="flex items-center justify-start">
-                        <img src="/img/NSF_logo.png"
-                            class="block object-contain h-16" />
+                        <img src="/img/NSF_logo.png" class="block object-contain h-16" />
                     </div>
                 </div>
             </div>
@@ -161,7 +135,7 @@ map: true
                 class="max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
                 Location</h2>
             <div class="mt-8 w-full mx-auto">
-                <div id="map" class="overflow-hidden my-4 w-full h-96 text-gray-900 rounded-xl shadow-xl"></div>
+                <div id="map" class="overflow-hidden my-4 w-full h-96 text-gray-900 rounded-xl shadow-md transform hover:scale-101 duration-300 hover:shadow-xl"></div>
             </div>
         </div>
     </div>
