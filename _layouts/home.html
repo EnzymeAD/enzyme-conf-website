@@ -17,18 +17,24 @@ map: true
                     </p>
                     <div class="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                         <div class="mt-3 rounded-lg sm:mt-0">
-                            <button
-                                class="items-center block px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-enzymeblue lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                                Signup
-                            </button>
+                            <a href="https://pretalx.enzyme.csail.mit.edu/enzymecon-2023/cfp">
+                                <button
+                                    class="items-center block px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-enzymeblue lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                    Submit a Talk
+                                </button>
+                            </a>
                         </div>
                         <div class="mt-3 rounded-lg sm:mt-0 sm:ml-3">
-                            <a href="https://pretalx.enzyme.csail.mit.edu/enzymecon-2023/cfp">
-                            <button
-                                class="items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-enzymeblue transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                                Submit a Talk
-                            </button>
-                            </a>
+                            <div class="relative">
+                                <button class="items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-enzymeblue transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                    Sign up
+                                </button>
+                                <div class="absolute h-12 w-24 -right-12 -top-3">
+                                    <span class="rounded-full bg-blue-100 px-3 py-1 text-xs font-light text-enzymeblue shadow">
+                                        coming soon
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -54,18 +60,23 @@ map: true
                     <h2
                         class="mr-4 max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
                         Timeline</h2>
-                        <button class="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-enzymeblue transform hover:scale-101 duration-300 hover:shadow">
-                            Add to Calendar
-                        </button>
+                    <button
+                        class="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-enzymeblue transform hover:scale-101 duration-300 hover:shadow">
+                        Add to Calendar
+                    </button>
                 </div>
                 <ol class="border-l border-gray-300 mt-8">
                     {% for item in site.data.dates %}
                     <li>
                         <div class="flex flex-start items-center pt-3">
                             {% if item.mark %}
-                            <div class="bg-enzymeblue w-2 h-2 rounded-full animate-pulse -ml-1 mr-3 transform hover:scale-125 duration-300 hover:shadow"></div>
+                            <div
+                                class="bg-enzymeblue w-2 h-2 rounded-full animate-pulse -ml-1 mr-3 transform hover:scale-125 duration-300 hover:shadow">
+                            </div>
                             {% else %}
-                            <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3 transform hover:scale-125 duration-300 hover:shadow"></div>
+                            <div
+                                class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3 transform hover:scale-125 duration-300 hover:shadow">
+                            </div>
                             {% endif %}
                             <p class="text-gray-500 text-sm">{{ item.date }}</p>
                         </div>
@@ -137,7 +148,9 @@ map: true
                 class="max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
                 Location</h2>
             <div class="mt-8 w-full mx-auto">
-                <div id="map" class="overflow-hidden my-4 w-full h-96 text-gray-900 rounded-xl shadow-md transform hover:scale-101 duration-300 hover:shadow-xl"></div>
+                <div id="map"
+                    class="overflow-hidden my-4 w-full h-96 text-gray-900 rounded-xl shadow-md transform hover:scale-101 duration-300 hover:shadow-xl">
+                </div>
             </div>
         </div>
     </div>
