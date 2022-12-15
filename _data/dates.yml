@@ -5,7 +5,7 @@
   mark: true
 
 - date: '1/13/2023 23:59'
-  name:  "Call for Roundtables"
+  name: "Call for Roundtables"
   text: ""
   mark: false
 
@@ -15,7 +15,7 @@
   mark: false
   
 - date: '1/20/2023 23:59'
-  name:  "Notification Period"
+  name: "Notification Period"
   text: "We notify all autors about the status of their summissions."
   mark: false
 
@@ -25,11 +25,11 @@
   mark: false
 
 - date: '2/23/2023 08:00 - 19:15'
-  name:  "Conference Day 2"
+  name: "Conference Day 2"
   text: "Day two of the conference."
   mark: false
 
 - date: '2/24/2023 08:00 - 10:00'
-  name:  "Conference Day 3"
+  name: "Conference Day 3"
   text: "Day three of the conference."
   mark: false
