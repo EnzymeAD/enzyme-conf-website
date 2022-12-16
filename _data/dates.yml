@@ -1,20 +1,10 @@
 
-- date: '1/6/2023 23:59'
-  name: "Call for Proposals"
-  text: ""
-  mark: true
-
-- date: '1/13/2023 23:59'
-  name: "Call for Roundtables"
-  text: ""
-  mark: false
-
 - date: '1/06/2023 23:59 UTC'
   name:  "Submisson Deadline"
   text: ""
-  mark: false
+  mark: true
   
-- date: '1/20/2023 23:59'
+- date: '1/13/2023 23:59'
   name: "Notification Period"
   text: "We notify all autors about the status of their summissions."
   mark: false
