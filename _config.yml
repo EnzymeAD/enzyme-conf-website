@@ -1,4 +1,7 @@
 title: Enzyme Conference
+tagline: Enzyme Conference 2023 | February 22-24, 2023 University of Colorado Boulder, CO, USA
+description: This workshop aims at bringing together the contributors and users of Enzyme in particular, and people interested in automatic differentiation within the LLVM infrastructure in general, for two days of fast-paced high-bandwidth idea exchange and collaboration bootstrapping.
+logo: /img/logo.png
 locale: en_US
 lang: en
 url: https://enzyme.mit.edu/conference
