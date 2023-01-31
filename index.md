@@ -18,7 +18,7 @@ Automatic differentiation is an established field that is seeing renewed interes
 
 ## Logistics
 
-Denver airport (DEN) is the nearest airport to the venue. There is a bus that runs hourly between the airport and Boulder [(Route AB1 bus)](https://www.rtd-denver.com/app/route/AB/schedule?direction=westbound). The airport is a 30-60 minute drive to Boulder.
+Denver airport (DEN) is the nearest airport to the venue. There is a bus that runs hourly between the airport and Boulder [(Route AB1 bus)](https://www.rtd-denver.com/app/route/AB/schedule?direction=westbound) which takes roughly 90 minutes. Alternatively, the airport is a 30-60 minute drive to Boulder.
 
 Several hotels are a short walk from the CU Boulder campus. The cheapest convenient lodging is the [Millenium](https://www.millenniumhotels.com/en/boulder/millennium-harvest-house-boulder/) for roughly $100/night. Similarly nearby are also the Boulder Marriott and Hilton Boulder, at roughly $200/night.
 
