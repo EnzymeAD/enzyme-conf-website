@@ -16,4 +16,4 @@ Several hotels are a short walk from the CU Boulder campus. The cheapest conveni
 
 ## Venue
 
-EnzymeCon will take place at CU Boulder in room ECNT 312 in the [Engineering Center North Tower](https://www.colorado.edu/map).
+EnzymeCon will take place at CU Boulder in room ECNT 312 in the [Engineering Center North Tower](https://www.colorado.edu/map/?id=336#!m/432495).
