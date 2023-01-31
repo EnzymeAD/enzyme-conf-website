@@ -6,7 +6,7 @@ header: February 22-24, 2023 University of Colorado Boulder, CO, USA
 
 ## Attendance
 
-The registration fee is $160, which allows us to cover organization, student travel, lunch and coffee. The registration will open early Februrary.
+The registration fee is $160, which allows us to cover organization, student travel, lunch and coffee. The registration will open early February.
 
 Student travel grants will be available through a separate application process once the registration opens.
 
