@@ -25,3 +25,7 @@ Several hotels are a short walk from the CU Boulder campus. The cheapest conveni
 ## Venue
 
 EnzymeCon will take place at CU Boulder in room ECNT 312 in the [Engineering Center North Tower](https://www.colorado.edu/map/?id=336#!m/432495).
+
+## Student Travel Grants
+
+The Enzyme conference is committed to helping students attend and is pleased to offer limited funds to offset the cost of attendance. Travel grants will be made out of available funds and may not be able to cover all needs. Please submit your application through this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfxlNIlVXVLYbFNnB00FQ-DBPh2aD4kbW0zX43rolFRgphfXg/viewform?usp=sf_link).
