@@ -10,7 +10,49 @@ The registration fee is $160, which allows us to cover organization, student tra
 
 Student travel grants are available, please see below.
 
-**[List of accepted sessions](https://pretalx.enzyme.csail.mit.edu/enzymecon-2023/featured/)**
+## Program
+
+Full schedule with abstracts and author names is available [here](https://pretalx.enzyme.csail.mit.edu/enzymecon-2023/schedule/).
+
+### Wednesday, February 22
+
+- 12:15pm — Registration Starts
+- 1:15pm — Opening
+- **1:30pm — Session 1: Enzyme Applications**
+  - PSDR-Enzyme: Physics-Based Differentiable Rendering Using Enzyme
+  - Automatic Differentiation in Solid Mechanics: Interpretation and Composition
+  - Differentiating Large-Scale Finite Element Applications with MFEM
+  - A Cross-Language Probabilistic Programming Protocol for Physics and Beyond
+  - Numba-Enzyme: A Differentiable JIT-ed Python
+- 3:30pm — Cofee Break
+- **4:00pm — Enzyme Tutorial**
+- 5:00pm — Hackathon and Spontaneous Roundtables
+
+### Thursday, February 23
+
+- **9:00am — Session 2: Lessons from AD Tools**
+  - A survey of Tapenade in contrast with Enzyme
+  - NIFTy: The Why and How of Building AD from Scratch
+  - AD with Integrals
+- 10:30am — Coffee Break
+- **11:00am — Roundtables**
+  - DJ4Earth: Oceans, ice sheets, adjoints, and AD
+- 12:00pm — Lunch
+- **1:30pm — Session 3: Enzyme in Modern Programming Languages**
+  - Accelerating Black Hole Imaging with Enzyme
+  - Differentiable molecular simulation with Molly.jl
+  - Adjoint Checkpointing using Custom Differentiation Rules
+  - Oxide-Enzyme - Integrating Enzyme into the Rust compiler
+- 3:30pm — Coffee Break
+- **4:00pm — Session 4: Enzyme Extensions**
+  - Compilation Augmentation Enables High-Performance Batch Differentiation
+  - Hackable Autodiff: Extending Enzyme to MLIR for Reverse Mode Gradients
+  - Autodiff semantics and the level of abstraction
+ - 5:30pm — Hackathon and Spontaneous Roundtables
+
+### Friday, February 24
+
+- **8:30am — Hackathon day**
 
 ## Description
 
