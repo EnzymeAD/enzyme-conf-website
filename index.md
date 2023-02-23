@@ -39,15 +39,15 @@ Full schedule with abstracts and author names is available [here](https://pretal
   - DJ4Earth: Oceans, ice sheets, adjoints, and AD
 - 12:00pm — Lunch
 - **1:30pm — Session 3: Enzyme in Modern Programming Languages**
-  - Accelerating Black Hole Imaging with Enzyme
+  - Compilation Augmentation Enables High-Performance Batch Differentiation
   - Differentiable molecular simulation with Molly.jl
   - Adjoint Checkpointing using Custom Differentiation Rules
   - Oxide-Enzyme - Integrating Enzyme into the Rust compiler
 - 3:30pm — Coffee Break
 - **4:00pm — Session 4: Enzyme Extensions**
-  - Compilation Augmentation Enables High-Performance Batch Differentiation
   - Hackable Autodiff: Extending Enzyme to MLIR for Reverse Mode Gradients
   - Autodiff semantics and the level of abstraction
+  - Accelerating Black Hole Imaging with Enzyme
  - 5:30pm — Hackathon and Spontaneous Roundtables
 
 ### Friday, February 24
