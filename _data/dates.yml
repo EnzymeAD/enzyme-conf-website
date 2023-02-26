@@ -12,7 +12,7 @@
 - date: '2/22/2023 12:15 - 19:15'
   name:  "Conference Day 1"
   text: "Day one of the conference."
-  mark: true
+  mark: false
 
 - date: '2/23/2023 08:00 - 19:15'
   name: "Conference Day 2"
