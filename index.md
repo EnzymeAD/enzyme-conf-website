@@ -21,6 +21,7 @@ Full schedule with abstracts and author names is available [here](https://pretal
 - **1:30pm — Session 1: Enzyme Applications**
   - PSDR-Enzyme: Physics-Based Differentiable Rendering Using Enzyme
   - Automatic Differentiation in Solid Mechanics: Interpretation and Composition
+    [[slides](_assets/LeilaGhaffari_EnzymeCon2023.pdf)]
   - Differentiating Large-Scale Finite Element Applications with MFEM
   - A Cross-Language Probabilistic Programming Protocol for Physics and Beyond
   - Numba-Enzyme: A Differentiable JIT-ed Python
@@ -41,6 +42,7 @@ Full schedule with abstracts and author names is available [here](https://pretal
 - **1:30pm — Session 3: Enzyme in Modern Programming Languages**
   - Compilation Augmentation Enables High-Performance Batch Differentiation
   - Differentiable molecular simulation with Molly.jl
+    [[slides](_assets/JoeGreener_EnzymeCon2023.pdf)]
   - Adjoint Checkpointing using Custom Differentiation Rules
   - Oxide-Enzyme - Integrating Enzyme into the Rust compiler
 - 3:30pm — Coffee Break
