@@ -49,6 +49,7 @@ Full schedule with abstracts and author names is available [here](https://pretal
 - **4:00pm — Session 4: Enzyme Extensions**
   - Hackable Autodiff: Extending Enzyme to MLIR for Reverse Mode Gradients
   - Autodiff semantics and the level of abstraction
+    [[slides](https://enzyme.mit.edu/conference/assets/JanHueckelheim_EnzymeCon2023.pdf)]
   - Accelerating Black Hole Imaging with Enzyme
  - 5:30pm — Hackathon and Spontaneous Roundtables
 
