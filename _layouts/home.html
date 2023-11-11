@@ -10,15 +10,14 @@ map: true
                 <div class="text-center">
                     <h1
                         class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-enzymeblue md:text-5xl lg:text-6xl lg:max-w-7xl transform hover:animate-pulse duration-300">
-                        Enzyme Conference 2023
+                        {{ page.title }}
                     </h1>
                     <p class="max-w-xl mx-auto mt-8 text-base leading-relaxed text-gray-500">
-                        February 22-24, 2023 (before PPoPP/CGO/CC/HPCA/SIAM CSE) <br>
-                        University of Colorado Boulder, CO, USA
+                        {{ page.subheader }}
                     </p>
                     <div class="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                         <div class="mt-3 rounded-lg sm:mt-0">
-                            <a href="https://pretalx.enzyme.csail.mit.edu/enzymecon-2023/schedule/">
+                            <a href="{{ page.schedule }}">
                                 <button
                                     class="items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-enzymeblue transition duration-500 ease-in-out transform border-2 border-white hover:border-gray-50 shadow-md hover:shadow-xl rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
                                     Preview Schedule
@@ -27,7 +26,7 @@ map: true
                         </div>
                         <div class="mt-3 rounded-lg sm:mt-0 sm:ml-3">
                             <div class="relative">
-                                <a href="https://mit.universitytickets.com/w/event.aspx?id=1705">
+                                <a href="{{ page.registration }}">
                                 <button 
                                    class="items-center block px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-enzymeblue lg:px-10 shadow-md hover:shadow-xl rounded-xl hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                                    Register
@@ -59,15 +58,16 @@ map: true
                     <h2
                         class="mr-4 max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
                         Timeline</h2>
-                        <a href="https://calendar.google.com/calendar/u/0?cid=OGVkMDBmYmJkOTNlNGM2MWVlZTBlNDk2MzRhYzEzZTc4MjM0NTY2NzI4NjdiYjE5ZTNmYjM3OTY5NjU0MzIwZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+                <a href="{{ page.calendar }}">
                     <button
                         class="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-enzymeblue transform hover:scale-101 duration-300 hover:shadow">
                         Add to Calendar
                     </button>
-                    <a/>
+                </a>
                 </div>
                 <ol class="border-l border-gray-300 mt-8">
-                    {% for item in site.data.dates %}
+                    {% assign dates = site.data.dates[page.conference] %}
+                    {% for item in dates %}
                     <li>
                         <div class="flex flex-start items-center pt-3">
                             {% if item.mark %}
@@ -101,8 +101,9 @@ map: true
                 <h2
                     class="max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
                     Organizers</h2>
-                <div class="mt-8 flex flex-wrap -m-2">
-                    {% for organizer in site.data.organizers %}
+                <div class="mt-8 flex flex-wrap">
+                    {% assign organizers = site.data.organizers[page.conference] %}
+                    {% for organizer in organizers %}
                     <div class="p-2 lg:w-1/2 md:w-1/2 w-full">
                         <div
                             class="h-full flex items-center border-gray-200 border p-4 rounded-lg transform hover:-translate-y-1 duration-300 hover:shadow-md">
@@ -129,13 +130,13 @@ map: true
                 <h2
                     class="max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
                     Sponsors</h2>
-                <p class="mt-8">
-                    This workshop has received funding from the National Science Foundation.
-                </p>
-                <div class="mt-8 grid grid-cols-2 gap-16 text-center lg:grid-cols-3">
-                    <div class="flex items-center justify-start">
-                        <img src="{{ site.baseurl }}/img/NSF_logo.png" class="block object-contain h-16" />
-                    </div>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    {% assign sponsors = site.data.sponsors[page.conference] %}
+                    {% for sponsor in site.data.sponsors %}
+                    <a href="{{ sponsor.url }}">
+                        <img src="{{ site.baseurl }}/{{ sponsor.image }}" class="block object-contain h-16" />
+                    </a>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -161,8 +162,8 @@ map: true
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v12',
-            center: [-105.26145734222993, 40.0098165377417],
-            zoom: 12
+            center: [{{ page.mapCenter }}],
+            zoom: {{ page.mapZoom }},
         });
 
         map.on('load', function () {
@@ -170,7 +171,7 @@ map: true
         });
 
         let venue_marker = new mapboxgl.Marker()
-            .setLngLat([-105.26282099999537, 40.00681043602383])
+            .setLngLat([{{ page.mapPin }}])
             .addTo(map)
 
         map.addControl(

@@ -1,4 +1,4 @@
-# Enzyme Conference 2023 Website
+# Enzyme Conference Website
 
 ## What is Tailwind?
 >"Tailwind is a utility-first CSS framework for rapidly building custom user interfaces."

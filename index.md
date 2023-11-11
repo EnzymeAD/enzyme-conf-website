@@ -1,7 +1,15 @@
 ---
 layout: home
-title: Enzyme Conf 2023
+title: Enzyme Conference 2023
 header: February 22-24, 2023 University of Colorado Boulder, CO, USA
+subheader: February 22-24, 2023 (before PPoPP/CGO/CC/HPCA/SIAM CSE) <br> University of Colorado Boulder, CO, USA
+registration: https://mit.universitytickets.com/w/event.aspx?id=1705
+schedule: https://pretalx.enzyme.csail.mit.edu/enzymecon-2023/schedule/
+calendar: https://calendar.google.com/calendar/u/0?cid=OGVkMDBmYmJkOTNlNGM2MWVlZTBlNDk2MzRhYzEzZTc4MjM0NTY2NzI4NjdiYjE5ZTNmYjM3OTY5NjU0MzIwZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
+mapZoom: 12
+mapCenter: -105.26145734222993, 40.0098165377417
+mapPin: -105.26282099999537, 40.00681043602383
+conference: EnzymeCon23
 ---
 
 ## Attendance
