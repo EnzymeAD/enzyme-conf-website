@@ -132,7 +132,7 @@ map: true
                     Sponsors</h2>
                 <div class="mt-8 flex flex-wrap gap-4">
                     {% assign sponsors = site.data.sponsors[page.conference] %}
-                    {% for sponsor in site.data.sponsors %}
+                    {% for sponsor in sponsors %}
                     <a href="{{ sponsor.url }}">
                         <img src="{{ site.baseurl }}/{{ sponsor.image }}" class="block object-contain h-16" />
                     </a>
