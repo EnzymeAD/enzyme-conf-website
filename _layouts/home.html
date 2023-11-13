@@ -16,6 +16,7 @@ map: true
                         {{ page.subheader }}
                     </p>
                     <div class="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
+                    {% if page.schedule != "" %}
                         <div class="mt-3 rounded-lg sm:mt-0">
                             <a href="{{ page.schedule }}">
                                 <button
@@ -24,6 +25,8 @@ map: true
                                 </button>
                             </a>
                         </div>
+                    {% endif %}
+                    {% if page.registration != "" %}
                         <div class="mt-3 rounded-lg sm:mt-0 sm:ml-3">
                             <div class="relative">
                                 <a href="{{ page.registration }}">
@@ -34,6 +37,7 @@ map: true
                                 </a>
                             </div>
                         </div>
+                    {% endif %}
                     </div>
                 </div>
             </div>
@@ -50,6 +54,8 @@ map: true
     </div>
 </section>
 
+{% assign dates = site.data.dates[page.conference] %}
+{% if dates != null %}}
 <section>
     <div class="flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-col w-full max-w-3xl mx-auto text-left">
@@ -58,15 +64,16 @@ map: true
                     <h2
                         class="mr-4 max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
                         Timeline</h2>
+                {% if page.calendar != "" %}
                 <a href="{{ page.calendar }}">
                     <button
                         class="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-xs text-enzymeblue transform hover:scale-101 duration-300 hover:shadow">
                         Add to Calendar
                     </button>
                 </a>
+                {% endif %}
                 </div>
                 <ol class="border-l border-gray-300 mt-8">
-                    {% assign dates = site.data.dates[page.conference] %}
                     {% for item in dates %}
                     <li>
                         <div class="flex flex-start items-center pt-3">
@@ -92,8 +99,10 @@ map: true
         </div>
     </div>
 </section>
+{% endif %}
 
-
+{% assign organizers = site.data.organizers[page.conference] %}
+{% if organizers != null %}}
 <section>
     <div class="flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-col w-full max-w-3xl mx-auto text-left">
@@ -102,7 +111,6 @@ map: true
                     class="max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
                     Organizers</h2>
                 <div class="mt-8 flex flex-wrap">
-                    {% assign organizers = site.data.organizers[page.conference] %}
                     {% for organizer in organizers %}
                     <div class="p-2 lg:w-1/2 md:w-1/2 w-full">
                         <div
@@ -122,7 +130,10 @@ map: true
         </div>
     </div>
 </section>
+{% endif %}
 
+{% assign sponsors = site.data.sponsors[page.conference] %}
+{% if sponsors != null %}}
 <section>
     <div class="flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-col w-full max-w-3xl mx-auto text-left">
@@ -131,7 +142,6 @@ map: true
                     class="max-w-5xl text-2xl font-medium leading-none tracking-tighter text-neutral-600 md:text-2xl lg:text-3xl lg:max-w-4xl">
                     Sponsors</h2>
                 <div class="mt-8 flex flex-wrap gap-4">
-                    {% assign sponsors = site.data.sponsors[page.conference] %}
                     {% for sponsor in sponsors %}
                     <a href="{{ sponsor.url }}">
                         <img src="{{ site.baseurl }}/{{ sponsor.image }}" class="block object-contain h-16" />
@@ -142,6 +152,7 @@ map: true
         </div>
     </div>
 </section>
+{% endif %}
 
 <section>
     <div class="flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
