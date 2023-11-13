@@ -26,7 +26,7 @@ EnzymeCon23:
     mark: false
 
 EnzymeCon24:
-  - date: '1/1/2024 23:59 UTC'
-    name:  "Test"
-    text: ""
-    mark: true
+  # - date: '1/1/2024 23:59 UTC'
+  #   name:  "Test"
+  #   text: ""
+  #   mark: true
