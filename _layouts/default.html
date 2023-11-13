@@ -9,7 +9,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <base href="{{ site.baseurl }}" target="_blank">
+  {% if site.baseurl %}<base href="{{ site.baseurl }}">{% endif %}
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
   {% if layout.map %}
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
