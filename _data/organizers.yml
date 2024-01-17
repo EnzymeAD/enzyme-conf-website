@@ -38,8 +38,16 @@ EnzymeCon24:
 
   - name: "Oleksandr Zinenko (program)"
     affiliation: "Google Deepmind"
-    image: "img/ozinenko.jpg
+    image: "img/ozinenko.jpg"
 
   - name: "Tim Gymnich (web)"
     affiliation: "TU Munich"
     image: "img/tgymnich.jpg"
+
+  - name: "Jesse Michel"
+    affiliation: "MIT"
+    image: "img/jmichel.jpg"
+
+  - name: "Patrick Heimbach"
+    affiliation: "UT Austin"
+    image: "img/patrick-heimbach.jpeg"
