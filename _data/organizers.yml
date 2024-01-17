@@ -33,8 +33,12 @@ EnzymeCon23:
 
 EnzymeCon24:
   - name: "William S. Moses (general)"
-    affiliation: "MIT CSAIL"
+    affiliation: "University of Illinois"
     image: "img/wmoses.jpg"
+
+  - name: "Oleksandr Zinenko (program)"
+    affiliation: "Google Deepmind"
+    image: "img/ozinenko.jpg
 
   - name: "Tim Gymnich (web)"
     affiliation: "TU Munich"
