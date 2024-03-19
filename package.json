@@ -16,7 +16,7 @@
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.1.0",
     "postcss": "^8.4.32",
-    "postcss-import": "^15.1.0"
+    "postcss-import": "^16.0.1"
   },
   "scripts": {
     "build:production": "cross-env NODE_ENV=production gulp",
