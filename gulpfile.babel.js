@@ -1,11 +1,9 @@
-import autoprefixer from "autoprefixer";
 import browserSync from "browser-sync";
 import spawn from "cross-spawn";
 import cssnano from "cssnano";
 import { dest, series, src, task, watch } from "gulp";
 import postcss from "gulp-postcss";
-import atimport from "postcss-import";
-import tailwindcss from "tailwindcss";
+import tailwindcss from "@tailwindcss/postcss";
 
 const SITE_ROOT = "./_site";
 const POST_BUILD_STYLESHEET = `${SITE_ROOT}/assets/css/`;
@@ -35,9 +33,8 @@ task("processStyles", () => {
   return src(PRE_BUILD_STYLESHEET)
     .pipe(
       postcss([
-        atimport(),
-        tailwindcss(TAILWIND_CONFIG),
-        ...(isDevelopmentBuild ? [] : [autoprefixer(), cssnano()]),
+        tailwindcss(),
+        ...(isDevelopmentBuild ? [] : [cssnano()]),
       ])
     )
     .pipe(dest(POST_BUILD_STYLESHEET));
