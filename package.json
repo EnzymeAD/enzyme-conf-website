@@ -7,7 +7,7 @@
     "@babel/preset-env": "^7.24.7",
     "@babel/register": "^7.23.7",
     "@tailwindcss/typography": "^0.5.13",
-    "@tailwindcss/postcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.9",
     "browser-sync": "^3.0.2",
     "cross-env": "^7.0.3",
     "cross-spawn": "^7.0.3",
